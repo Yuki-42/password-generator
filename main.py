@@ -1,11 +1,8 @@
 import random
-# import tkinter
-
 import char
 import logging
 import sys
-# from tkinter import *
-# from tkinter import ttk
+
 
 # Initialising logging
 logging.basicConfig(
@@ -78,44 +75,6 @@ def updateSliderLabel(var):
 
 
 if __name__ == '__main__':
-    # # Initialising tkinter
-    # root = Tk()
-    # root.title("Generic Password Generator")
-#
-    # useLowercase = IntVar()
-    # useCapitals = IntVar()
-    # useNumbers = IntVar()
-    # useSpecials = IntVar()
-#
-    # sliderVar = tkinter.DoubleVar()
-#
-    # # Sets window dimensions
-    # root.geometry("400x400")
-#
-    # frm = ttk.Frame(root, padding=10)
-    # frm.pack(fill=tkinter.X, side=tkinter.LEFT)
-    # frm.pack(fill=tkinter.X, side=tkinter.TOP)
-#
-    # # Exit Button
-    # ttk.Button(frm, text="Exit", command=fullExit).grid(column=5, row=0)
-#
-    # # Text At top of window
-    # ttk.Label(frm, text="Selection").grid(column=0, row=0)
-#
-    # # Checkboxes for types
-    # ttk.Checkbutton(frm, text="Allow Lowercase Letters", variable=useLowercase).grid(column=0, row=1)
-    # ttk.Checkbutton(frm, text="Allow Capital Letters", variable=useCapitals).grid(column=0, row=2)
-    # ttk.Checkbutton(frm, text="Allow Numbers", variable=useNumbers).grid(column=0, row=3)
-    # ttk.Checkbutton(frm, text="Allow Special Characters", variable=useSpecials).grid(column=0, row=4)
-#
-    # # Slider for length of password
-    # sliderLabel = tkinter.Label(frm, text="Test").grid(column=0, row=5)
-#
-    # ttk.Scale(frm, from_=1, to=10000, orient="horizontal", command=updateSliderLabel, variable=sliderVar).grid(column=0,
-    #                                                                                                            row=6)
-#
-    # root.mainloop()
-
     print("Welcome to GENERIC_PASSWORD_MAKER")
 
     inputLength = input("How long would you like your password to be in digits? ")
@@ -127,7 +86,7 @@ if __name__ == '__main__':
         try:
             _ = int(inputLength)
         except ValueError:
-            exit("smartass")
+            exit("Funny guy, huh?")
 
     inputCapitals = input("Would you like to use capitalsAllowed in your password? y/n ")
     if inputCapitals == "yy":
